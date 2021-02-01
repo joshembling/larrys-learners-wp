@@ -1,0 +1,32 @@
+.offer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-bg {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  opacity: 0.9;
+  transform: rotate(-4deg);
+
+  &:first-child {
+    border-right: 14px solid #eb1b25;
+    background: rgba(235, 27, 37, 0.3);
+  }
+
+  &:nth-child(2) {
+    border-right: 14px solid #ef832f;
+    background: rgba(239, 131, 47, 0.3);
+  }
+
+  &:last-child {
+    border-right: 14px solid #33b96b;
+    background: rgba(51, 185, 107, 0.3);
+  }
+}
+
+#whats-on-offer,
+#book {
+  background: rgba($color: rgb(255, 255, 255), $alpha: 0.4);
+}

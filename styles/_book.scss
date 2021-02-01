@@ -1,0 +1,151 @@
+/* CALENDAR STYLES here */
+
+#fbuilder {
+  border-radius: 10px !important;
+}
+
+#fbuilder .ui-datepicker-header {
+  background: #68b5a8;
+  padding: 10px;
+  color: #444;
+  text-shadow: none;
+}
+
+.fieldCalendar {
+  padding: 20px !important;
+}
+
+.availableslot {
+  border-radius: 5px !important;
+  border: #f3f3f3 !important;
+}
+
+#fbuilder .ui-datepicker-inline {
+  max-width: 100% !important;
+  margin: auto !important;
+}
+
+.ahbfield_service {
+  display: none;
+}
+
+thead tr {
+  height: 50px !important;
+}
+
+.ui-datepicker {
+  font-family: inherit !important;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  height: 70px !important;
+
+  @media (max-width: 1000px) {
+    height: 30px !important;
+  }
+}
+
+.slotsCalendar {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#fbuilder .slots {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.slots {
+  width: 100%;
+  max-width: 90%;
+  margin: 5px;
+
+  div a {
+    background: #68b5a8 !important;
+    color: #fff !important;
+    padding: 10px !important;
+
+    &:hover {
+      text-decoration: none !important;
+      color: #444 !important;
+    }
+  }
+
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #68b5a8 !important;
+  color: #fff !important;
+}
+
+.usedSlots {
+  text-align: center !important;
+  margin: 10px 0 !important;
+
+  .ahb_list_time {
+    font-weight: 700 !important;
+
+    .d::after {
+      content: ' - ' !important;
+    }
+  }
+}
+
+.captcha {
+  padding: 10px 20px !important;
+
+  img {
+    margin-bottom: 10px !important;
+  }
+}
+
+.pbSubmit {
+  font-size: 16px !important;
+  padding: 8px 15px !important;
+  margin: -15px 20px 0 20px !important;
+  text-align: center;
+  width: 30%;
+  background: black !important;
+  color: white !important;
+  cursor: pointer !important;
+  border: none !important;
+  border-radius: 10px !important;
+  height: 40px !important;
+  @include transition1();
+
+  &:hover {
+    background-color: #68b5a8 !important;
+    @include transition1();
+  }
+}
+
+label[for='fieldname1_1'] {
+  display: none !important;
+}
+
+input[id='hdcaptcha_cp_appbooking_post_1'] {
+  width: 50% !important;
+}
+
+.fields {
+  padding: 0 20px !important;
+
+  input {
+    padding: 5px !important;
+  }
+}
+
+#fbuilder .medium {
+  width: 100% !important;
+}
+
+.ui-datepicker-title {
+  color: #fff !important;
+  font-size: 16px !important;
+}
