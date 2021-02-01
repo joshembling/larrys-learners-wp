@@ -2,7 +2,6 @@
 
 function theme_support()
 {
-  // This adds dynamic title tag support
   add_theme_support('title-tag');
 }
 
@@ -13,8 +12,6 @@ function load_stylesheets()
   wp_enqueue_style('bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", array(), '4.0.0', 'all');
 
   wp_enqueue_style('font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css", array(), '5.15.2', 'all');
-
-  // wp_enqueue_style('aos', "https://unpkg.com/aos@next/dist/aos.css", array(), '1.0', 'all');
 
   wp_enqueue_style('custom-styles', get_template_directory_uri() . "/styles/style.css", array(), '1.0', 'all');
 
@@ -32,8 +29,6 @@ function load_scripts()
   wp_enqueue_script('scrollspy', get_template_directory_uri() . "/js/scrollspy.js", array('jquery'), '1.0', true);
 
   wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array(), '4.0.0', true);
-
-  // wp_enqueue_script('aos', 'https://unpkg.com/aos@next/dist/aos.js', array(), '1.0', true);
 
   wp_enqueue_script('counter', get_template_directory_uri() . "/js/counter.js", array(), '1.0', true);
 
